@@ -1,0 +1,31 @@
+{
+  "name": "rollup-stream-issue-repro",
+  "version": "0.0.1",
+  "description": "Module order issue bundling stream for the browser",
+  "main": "test.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diegocr/rollup-stream-issue-repro.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "browserify": "browserify test.js > built.js",
+    "rollup": "rollup -c"
+  },
+  "author": "diegocr",
+  "license": "MIT",
+  "dependencies": {
+    "readable-stream": "^2.3.3",
+    "stream-browserify": "^2.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.0.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-cleanup": "^2.0.0",
+    "rollup-plugin-commonjs": "^8.2.4",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-visualizer": "^0.3.1"
+  }
+}
